@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AAF Automated Service Provider Installer</title>
+    <title>APAN</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -18,8 +18,8 @@
       <div class="container">  
         <div class="row">
           <div class="span12">
-            <img src="./logo.jpg" alt="AAF Virtual Home" width="102" height="50" />
-            <h1>TRS's IdP Tester - Experimental</h1>             
+            <img src="./logo.jpg" alt="APAN" width="102" height="50" />
+            <h1>APAN IdP Tester</h1>             
           </div
         </div>
       </div>
@@ -33,7 +33,6 @@
               <li>
                 <a href="http://ausaccessfed.github.io/shibboleth-idp-installer/">IdP Installer</a>
               </li>
-              <li><a href="http://support.aaf.edu.au" target="_blank">Support</a></li>
             </ul>
           </div>
         </div>
@@ -54,12 +53,12 @@
 echo "<table>\n";
 
 foreach ($_SERVER as $key => $value) {
-        $pos = strpos($key, 'AAF');
+        $pos = strpos($key, 'APAN');
         if ($pos !== false) {
-            $pos = strpos($key, 'AAF-Shib');
+            $pos = strpos($key, 'APAN-Shib');
             if ($pos === false) {
 		echo "<tr>\n";
-                $newkey=substr($key, 4);
+                $newkey=substr($key, 5);
 		echo "<td valign='top'><b>$newkey</b></td><td> </td><td>";
                 $vals = explode (';', $value);
                 foreach ($vals as $kval => $val) {
