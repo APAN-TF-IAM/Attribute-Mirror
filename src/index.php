@@ -86,7 +86,7 @@ echo "</table>\n";
         <div class="row">
           <div class="span12">
             <p>
-              <a href="http://www.aaf.edu.au">Australian Access Federation</a>
+              <a href="http://apan.net">APAN</a>
             </p>
           </div>
         </div>
